@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+
+    <body>     
+        <h1 id="title">Sample Survey Form</h1>
+        <p id="description">Survey description here</p>
+
+        <form id="survey-form" action="">
+            
+            <label id="name-label">Name: 
+                <input id="name" type="text" class="name" placeholder="Enter your name" required />
+            </label>
+            <label id="email-label">Email: 
+                <input id="email" type="email" class="email" placeholder="Enter your email" required />
+            </label>
+            <label id="number-label">Age (optional): 
+                <input id="number" type="number" class="name" min=13 max=120 placeholder="Enter your age(years)"  />
+                </label>
+            <fieldset>
+                <label>Selecting from a dropdown menu: 
+                    <select id="dropdown">
+                        <option value="">Select an option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Selecting from a radio button group: 
+                    <label><input type="radio" value="1" class="inline" name="radiogroup1">Radio button 1</label>
+                    <label><input type="radio" value="2" class="inline" name="radiogroup1">Radio button 2</label>
+                    <label><input type="radio" value="3" class="inline" name="radiogroup1">Radio button 3</label>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Selecting from chckoxes: 
+                    <label><input type="checkbox" value="1" class="inline" name="checkbox1">checkbox 1</label>
+                    <label><input type="checkbox" value="2" class="inline" name="checkbox1">checkbox 2</label>
+                    <label><input type="checkbox" value="3" class="inline" name="checkbox1">checkbox 3</label>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Enter long form comments:
+                    <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+                </label>
+            </fieldset>
+            
+            <input id="submit" type="submit" value="Submit" >
+        </form>
+    </body>
+</html>
